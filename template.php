@@ -41,32 +41,10 @@ $viewtable = new viewtable();
              <a href="https://twitter.com/ceumalolos"><i class="fab fa-twitter ceucolor"></i></a>
         </nav>
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-        <div class="container mt-4 puff-in-center">
-          <?php $viewtable->viewApproveTable(); ?>
-=======
         <div class="container-fluid mt-4 puff-in-center">
           <div class="row">
             <div class="col-md-5">
-              profile
-            </div>
-            <div class="col-md-7">
-              <?php
-              $teacherTable = new teacherTable();
-              $teacherTable->viewData();
-              ?>
-            </div>
-          </div>
->>>>>>> Stashed changes
-=======
-        <div class="container-fluid mt-4 puff-in-center">
-          <div class="row">
-
-
-              <div class="col-md-5">
-
-                  <div class="profile-texter">
+              <div class="profile-texter">
                   <h3 class="ml-5 ceucolor2"> profile </h3>
                   </div>
 
@@ -102,21 +80,15 @@ $viewtable = new viewtable();
                     <a class="btn btn-primary mt-3 profile-texter" href="updatepropic.php">Update Profile Picture</a> 
                   </br>  
                     <a class="btn btn-danger mt-3 profile-texter" href="logout.php">Logout</a>
-
-              </div>
-
-
-
-            <div class="col-md-5">
-              profile
             </div>
-
             <div class="col-md-7">
-              list
+              <?php
+              $teacherTable = new teacherTable();
+              $teacherTable->viewData();
+              ?>
             </div>
           </div>
->>>>>>> origin/profileView
-        </div>
+        </div> 
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
