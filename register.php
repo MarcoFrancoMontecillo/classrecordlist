@@ -83,10 +83,9 @@ $view = new view;
                                 </div>
                                 <div class="form-group col-3">
                                     <label for="College" >Status</label>
-                                    <select class="selectpicker form-select" id="status" required>
-                                        <option value="teacher">Teacher</option>
-                                        <option value="student">Student</option>
-                                    </select>
+                                    <select id="Status" name="Status[]" class="selectpicker form-control" data-live-search="true" multiple required>
+                                        <?php $view->statusSP2();?>
+                                      </select>
                                 </div>
                              </div>
                         </td>
