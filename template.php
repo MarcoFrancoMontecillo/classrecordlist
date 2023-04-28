@@ -54,9 +54,6 @@ $viewtable = new viewtable();
                   <?php profilePic(); ?>
                   </div>
 
-                  <div>
-    
-                  </div>
                    <?php
                       $user = new User();
                       echo "<b class='ceucolor2'>Name: </b>"; echo $user->data()->name;
@@ -64,30 +61,27 @@ $viewtable = new viewtable();
                     ?>
                     
                     <?php
-
                     $user = new User();
                     echo "<b class='ceucolor2'>Date joined: </b>"; echo $user->data()->joined;
                     echo "<br/>"
                     ?>
 
                     <?php
-
                     $user = new User();
                     echo "<b class='ceucolor2'>Email: </b>"; echo $user->data()->email;
                     echo "<br/>"
-                      ?>
+                    ?>
 
                     <?php
-
                     $user = new User();
                     echo "<b class='ceucolor2'>Course: </b>"; echo $user->data()->colleges;
                     echo "<br/>"
-                      ?>
+                    ?>
 
                     <a class="btn btn-info mt-3 profile-texter" href="updateprofile.php">Update Profile</a> </br>  
                     <a class="btn btn-primary mt-3 profile-texter" href="updatepropic.php">Update Profile Picture</a> 
                   </br>  
-                    <a class="btn btn-danger mt-3 profile-texter" href="logout.php">Log out</a>
+                    <a class="btn btn-danger mt-3 profile-texter" href="logout.php">Log-out</a>
 
               </div>
 
