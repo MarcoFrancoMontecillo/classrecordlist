@@ -33,10 +33,80 @@
 
 }
 
-.puff-in-center {
-	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+.bg-pic-login{
+        background-image: url(../img/loginbg.jpg);
+        background-size: cover;
+        background-position: center;
+        
 }
+
+.bg-color{
+        
+        background-color: #F8C8DC;
+}
+
+.bg2-color{
+        background-color: #FFF;
+}
+
+.fade-in-center {
+        animation: fadeIn 5s;
+        -webkit-animation: fadeIn 5s;
+        -moz-animation: fadeIn 5s;
+        -o-animation: fadeIn 5s;
+        -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+        0% {
+                opacity: 0;
+        }
+
+        100% {
+                opacity: 1;
+        }
+}
+
+@-moz-keyframes fadeIn {
+        0% {
+                opacity: 0;
+        }
+
+        100% {
+                opacity: 1;
+        }
+}
+
+@-webkit-keyframes fadeIn {
+        0% {
+                opacity: 0;
+        }
+
+        100% {
+                opacity: 1;
+        }
+}
+
+@-o-keyframes fadeIn {
+        0% {
+                opacity: 0;
+        }
+
+        100% {
+                opacity: 1;
+        }
+}
+
+@-ms-keyframes fadeIn {
+        0% {
+                opacity: 0;
+        }
+
+        100% {
+                opacity: 1;
+        }
+}
+
 .slide-in-left {
 	-webkit-animation: slide-in-left 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-left 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
