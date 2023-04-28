@@ -47,6 +47,7 @@
           <div class="row">
               <div class="col col-sm-5 text-left">
                   <small>Copyright &copy;Centro Escolar University     Office of the Registrar 2019</small>
+                  
               </div>
               <div class="col text-right">
                   <small>Created by: Reymart Bolasoc, Amelia Valencia , James Mangalile, Kenneth De Leon , Pamela Reyes , Ellen Mijares</small>
