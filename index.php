@@ -27,11 +27,7 @@
             <div class="container bg">
                 <div class="jumbotron">
                     <h1 class="display-4 text-center bottomline">Office of the University Registrar <span class="ceucolor2">Portal</span></h1>
-                    <p class="text-center">The Centro Escolar University Office of the Registrar supports the college/schools
-and the university in realizing its commitment for the total development of students by providing
-efficient and quality service in terms of registering, updating, evaluating and safekeeping of
-student records, participating in curriculum making/revision and implementing the
-University and CHED policies, rules and regulations.</p>
+                    <p class="text-center">The Centro Escolar University Office of the Registrar supports the college/schools and the university in realizing its commitment for the total development of students by providing efficient and quality service in terms of registering, updating, evaluating and safekeeping of student records, participating in curriculum making/revision and implementing the University and CHED policies, rules and regulations.</p>
                     <p class="lead">
                     <div class="container-fluid">
                         <div class="col col-sm-12  text-center mt-5">
