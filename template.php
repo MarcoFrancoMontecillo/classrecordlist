@@ -82,7 +82,7 @@ $viewtable = new viewtable();
                     <a class="btn btn-info mt-3 profile-texter" href="updateprofile.php">Update Profile</a> </br>  
                     <a class="btn btn-primary mt-3 profile-texter" href="updatepropic.php">Update Profile Picture</a> 
                   </br>  
-                    <a class="btn btn-danger mt-3 profile-texter" href="logout.php">Log-out</a>
+                    <a class="btn btn-danger mt-3 profile-texter" href="logout.php">Logout</a>
 
               </div>
 
