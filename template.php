@@ -41,8 +41,15 @@ $viewtable = new viewtable();
              <a href="https://twitter.com/ceumalolos"><i class="fab fa-twitter ceucolor"></i></a>
         </nav>
 
-        <div class="container mt-4 puff-in-center">
-          <?php $viewtable->viewApproveTable(); ?>
+        <div class="container-fluid mt-4 puff-in-center">
+          <div class="row">
+            <div class="col-md-5">
+              profile
+            </div>
+            <div class="col-md-7">
+              list
+            </div>
+          </div>
         </div>
 </body>
 
