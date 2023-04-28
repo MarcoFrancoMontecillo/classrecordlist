@@ -39,10 +39,25 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/classrecordlist/resource/php/class/core
                     </div>
                     <input type =hidden name="token" value="<?php echo Token::generate(); ?>">
                     <input  type="submit"  class="btn btn-dark btn-block my-4"value="Login"/>
+
+                    <a href="register.php">No account yet? Register Now.</a>
                     </form>
                 </div>
             </div>
           </div>
+
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50 shadow fixed-bottom">
+          <div class="container-fluid text-center">
+              <div class="row">
+                  <div class="col col-sm-2 text-left">
+                      <small>Copyright &copy;Port-Twentyfour.info    BSIT3A 2024</small>
+                  </div>
+                  <div class="col text-right">
+                      <small>Created by: Marco Franco Montecillo, Lesiree Charles Bautista , Carl Jerome Cabral, Jeremy Magat Yumul , Gabrielle Angelo Diño , Charles Matthew B. Barde , Rochael Ann Reyes </small>
+                  </div>
+              </div>
+          </div>
+        </footer>
         <script src="vendor/js/jquery.js"></script>
         <script src="vendor/js/popper.js"></script>
         <script src="vendor/js/bootstrap.min.js"></script>
