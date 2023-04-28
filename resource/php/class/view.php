@@ -17,8 +17,6 @@ class view extends config{
                 }
         }
 
-<<<<<<< Updated upstream
-=======
         public function statusSP2(){
             $config = new config;
             $con = $config->con();
@@ -26,14 +24,14 @@ class view extends config{
             $data = $con-> prepare($sql);
             $data ->execute();
             $rows =$data-> fetchAll(PDO::FETCH_OBJ);
+
                 echo '>'.$row['status'].'</th>';
+
                 foreach ($rows as $row) {
                   echo '<option data-tokens=".'.$row->status.'." value="'.$row->status.'">'.$row->status.'</option>';
                   echo 'success';
                 }
         }
-
->>>>>>> Stashed changes
         public function getdpSRA(){
             $user = new user();
             return $user->data()->dp;
