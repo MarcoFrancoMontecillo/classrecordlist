@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 22, 2021 at 01:39 AM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.1.33
+-- Generation Time: Apr 28, 2023 at 06:22 AM
+-- Server version: 8.0.31
+-- PHP Version: 8.0.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `rcbolaso_scholar`
+-- Database: `classrecordlist`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +29,7 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `collegeschool`;
 CREATE TABLE IF NOT EXISTS `collegeschool` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int NOT NULL AUTO_INCREMENT,
   `college_school` varchar(100) NOT NULL,
   `state` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
@@ -64,20 +63,20 @@ INSERT INTO `collegeschool` (`id`, `college_school`, `state`) VALUES
 
 DROP TABLE IF EXISTS `tbl_accounts`;
 CREATE TABLE IF NOT EXISTS `tbl_accounts` (
-  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `username` varchar(20) COLLATE armscii8_bin DEFAULT NULL,
-  `password` varchar(64) COLLATE armscii8_bin DEFAULT NULL,
-  `salt` varchar(32) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
-  `name` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
+  `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
+  `password` varchar(64) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
+  `salt` varchar(32) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin DEFAULT NULL,
+  `name` varchar(50) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
   `joined` datetime DEFAULT NULL,
-  `groups` int(11) DEFAULT NULL,
-  `colleges` varchar(100) COLLATE armscii8_bin DEFAULT NULL,
-  `quote` varchar(20) COLLATE armscii8_bin DEFAULT NULL,
-  `dp` longblob DEFAULT NULL,
-  `nm` varchar(255) COLLATE armscii8_bin DEFAULT NULL,
-  `mm` varchar(255) COLLATE armscii8_bin DEFAULT NULL,
-  `email` varchar(120) COLLATE armscii8_bin DEFAULT NULL,
-  `diploma` tinyint(1) NOT NULL DEFAULT 0,
+  `groups` int DEFAULT NULL,
+  `colleges` varchar(100) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
+  `quote` varchar(20) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
+  `dp` longblob,
+  `nm` varchar(255) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
+  `mm` varchar(255) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
+  `email` varchar(120) CHARACTER SET armscii8 COLLATE armscii8_bin DEFAULT NULL,
+  `diploma` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
@@ -104,9 +103,9 @@ INSERT INTO `tbl_accounts` (`id`, `username`, `password`, `salt`, `name`, `joine
 
 DROP TABLE IF EXISTS `tbl_group`;
 CREATE TABLE IF NOT EXISTS `tbl_group` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) COLLATE armscii8_bin NOT NULL,
-  `permission` text COLLATE armscii8_bin NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) CHARACTER SET armscii8 COLLATE armscii8_bin NOT NULL,
+  `permission` text CHARACTER SET armscii8 COLLATE armscii8_bin NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
@@ -121,14 +120,46 @@ INSERT INTO `tbl_group` (`id`, `name`, `permission`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_student`
+--
+
+DROP TABLE IF EXISTS `tbl_student`;
+CREATE TABLE IF NOT EXISTS `tbl_student` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE armscii8_bin NOT NULL,
+  `course` varchar(255) COLLATE armscii8_bin NOT NULL,
+  `year` varchar(255) COLLATE armscii8_bin NOT NULL,
+  `student_id` varchar(255) COLLATE armscii8_bin NOT NULL,
+  `section` varchar(255) COLLATE armscii8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_teacher`
+--
+
+DROP TABLE IF EXISTS `tbl_teacher`;
+CREATE TABLE IF NOT EXISTS `tbl_teacher` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE armscii8_bin NOT NULL,
+  `department` varchar(255) COLLATE armscii8_bin NOT NULL,
+  `major` varchar(255) COLLATE armscii8_bin NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user_session`
 --
 
 DROP TABLE IF EXISTS `user_session`;
 CREATE TABLE IF NOT EXISTS `user_session` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
-  `hash` varchar(120) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_id` int NOT NULL,
+  `hash` varchar(120) CHARACTER SET utf8mb3 COLLATE utf8mb3_bin NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 COMMIT;
