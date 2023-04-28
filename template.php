@@ -44,6 +44,7 @@ $viewtable = new viewtable();
         <div class="container-fluid mt-4 puff-in-center">
           <div class="row">
 
+
               <div class="col-md-5">
 
                   <div class="profile-texter">
@@ -85,6 +86,11 @@ $viewtable = new viewtable();
 
               </div>
 
+
+
+            <div class="col-md-5">
+              profile
+            </div>
 
             <div class="col-md-7">
               list
