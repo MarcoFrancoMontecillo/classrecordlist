@@ -24,9 +24,6 @@ class view extends config{
             $data = $con-> prepare($sql);
             $data ->execute();
             $rows =$data-> fetchAll(PDO::FETCH_OBJ);
-
-                echo '>'.$row['status'].'</th>';
-
                 foreach ($rows as $row) {
                   echo '<option data-tokens=".'.$row->status.'." value="'.$row->status.'">'.$row->status.'</option>';
                   echo 'success';
