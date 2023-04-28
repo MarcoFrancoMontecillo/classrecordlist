@@ -35,7 +35,7 @@ $view = new view;
            <a href="https://twitter.com/ceumalolos"><i class="fab fa-twitter ceucolor"></i></a> -->
          </nav>
 
-         <div class="container mt-4 puff-in-center">
+         <div class="container mt-4 puff-in-center register_container">
              <div class="row">
                  <div class="col-12">
                      <h1 class="text-center">Register Student/Teacher List</h1>
