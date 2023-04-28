@@ -28,7 +28,7 @@ $viewtable = new viewtable();
   <script type="text/javascript" charset="utf8" src="vendor/js/dataTables/buttons.print.min.js"></script>
 
 </head>
-<body>
+<body id="tempbody">
 
         <nav class="navbar navbar-dark bg-white shadow-sm slide-in-left">
           <a class="navbar-brand" href="https://malolos.ceu.edu.ph/">
