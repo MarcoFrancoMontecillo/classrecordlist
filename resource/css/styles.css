@@ -21,16 +21,54 @@
     font-size: 2rem;
 }
 
-.screen2{
-    background-image: url(../img/block.jpg);
-	background-size: cover;
-	background-position: center;
-    width: 100%;
-    height: 100%;
-    z-index: 500;
-    position:absolute;
-    overflow: hidden;
+#teachtbl {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border: 1px solid;
+}
 
+#teachtbl thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+}
+
+#teachtbl th,
+#teachtbl td {
+        padding: 12px 15px;
+}
+
+#teachtbl tr td {
+
+        border: 1px solid #1c1c1c;
+
+}
+
+#teachtbl th {
+
+        border: 1px solid #1c1c1c;
+
+}
+
+
+.screen2{
+        background-image: url(../img/block.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        z-index: 500;
+        position:absolute;
+        overflow: hidden;
+}
+
+#tempbody{
+        background: rgb(110, 185, 215);
+        background: linear-gradient(90deg, rgba(110, 185, 215, 1) 0%, rgba(212, 240, 240, 1) 48%, rgba(255, 128, 216, 0.39539565826330536) 100%);
 }
 
 .bg-pic-login{
