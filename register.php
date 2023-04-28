@@ -82,11 +82,10 @@ $view = new view;
                                  <input class="form-control"  type = "text" name="email" id="email" value ="<?php echo input::get('email');?>"/required>
                                 </div>
                                 <div class="form-group col-3">
-                                    <label for="College" >Status</label>
-                                    <select class="selectpicker form-select" id="status" required>
-                                        <option value="teacher">Teacher</option>
-                                        <option value="student">Student</option>
-                                    </select>
+                                    <label for="Status" >Status</label>
+                                    <select id="Status" name="Status[]" class="selectpicker form-control" data-live-search="true" multiple required>
+                                        <?php $view->statusSP2();?>
+                                      </select>
                                 </div>
                              </div>
                         </td>
