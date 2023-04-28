@@ -67,19 +67,26 @@ $view = new view;
                     <tr>
                         <td>
                             <div class="row justify-content-center">
-                                <div class="form-group col-4">
+                                <div class="form-group col-3">
                                  <label for = "fullName" class=""> Full Name</label>
                                  <input class="form-control"  type = "text" name="fullName" id="fullName" value ="<?php echo input::get('fullName');?>"/required>
                                 </div>
-                                <div class="form-group col-4">
-                                  <label for="College" >College/s to handle</label>
+                                <div class="form-group col-3">
+                                  <label for="College" >College/s</label>
                                       <select id="College" name="College[]" class="selectpicker form-control" data-live-search="true" multiple required>
                                         <?php $view->collegeSP2();?>
                                       </select>
                                 </div>
-                                <div class="form-group col-4">
+                                <div class="form-group col-3">
                                  <label for = "email" class=""> Email Address</label>
                                  <input class="form-control"  type = "text" name="email" id="email" value ="<?php echo input::get('email');?>"/required>
+                                </div>
+                                <div class="form-group col-3">
+                                    <label for="College" >Status</label>
+                                    <select class="selectpicker form-select" id="status" required>
+                                        <option value="teacher">Teacher</option>
+                                        <option value="student">Student</option>
+                                    </select>
                                 </div>
                              </div>
                         </td>
@@ -90,7 +97,7 @@ $view = new view;
                                 <div class="form-group col-7">
                                     <label  >&nbsp;</label>
                                 <input type="hidden" name ="Token" value="<?php echo Token::generate();?>" />
-                                 <input type="submit" value="Register New SRA" class=" form-control btn btn-primary" />
+                                 <input type="submit" value="Register" class=" form-control btn btn-primary" />
                                 </div>
                             </div>
                         </td>
