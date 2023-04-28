@@ -41,8 +41,23 @@ $viewtable = new viewtable();
              <a href="https://twitter.com/ceumalolos"><i class="fab fa-twitter ceucolor"></i></a>
         </nav>
 
+<<<<<<< Updated upstream
         <div class="container mt-4 puff-in-center">
           <?php $viewtable->viewApproveTable(); ?>
+=======
+        <div class="container-fluid mt-4 puff-in-center">
+          <div class="row">
+            <div class="col-md-5">
+              profile
+            </div>
+            <div class="col-md-7">
+              <?php
+              $teacherTable = new teacherTable();
+              $teacherTable->viewData();
+              ?>
+            </div>
+          </div>
+>>>>>>> Stashed changes
         </div>
 </body>
 
