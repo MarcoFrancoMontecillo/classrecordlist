@@ -52,10 +52,10 @@ function vald(){
          }else{
             $_POST['College'] ="";
          }
-         if(!empty($_POST['status'])){
-             $_POST['status'] = implode(',',input::get('status'));
+         if(!empty($_POST['Status'])){
+             $_POST['Status'] = implode(',',input::get('Status'));
          }else{
-            $_POST['status'] ="";
+            $_POST['Status'] ="";
          }
         $validate = new Validate;
         $validate = $validate->check($_POST,array(
@@ -81,7 +81,7 @@ function vald(){
             'email'=>array(
                 'required'=>'true'
             ),
-            'status'=>array(
+            'Status'=>array(
                 'required'=>'true'
             ),
             'College'=>array(
@@ -101,7 +101,7 @@ function vald(){
                         'groups'=>1,
                         'colleges'=> input::get('College'),
                         'email'=> input::get('email'),
-                        'status'=> input::get('status'),
+                        'status'=> input::get('Status'),
                     ));
 
                     $user->createC(array(
