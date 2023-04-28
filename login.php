@@ -53,7 +53,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/classrecordlist/resource/php/class/core
                       <small>Copyright &copy;Port-Twentyfour.info    BSIT3A 2024</small>
                   </div>
                   <div class="col text-right">
-                      <small>Created by: Marco Franco Montecillo, Lesiree Charles Bautista , Carl Jerome Cabral, Jeremy Magat Yumul , Gabrielle Angelo Diño , Charles Matthew B. Barde , Rochael Ann Reyes </small>
+                      <small>Created by: Marco Franco Montecillo, Lesiree Charles Bautista, Carl Jerome Cabral, Jeremy Magat Yumul, Gabrielle Angelo Diño & Charles Matthew Barde</small>
                   </div>
               </div>
           </div>
