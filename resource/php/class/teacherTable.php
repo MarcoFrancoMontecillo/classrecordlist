@@ -14,6 +14,7 @@ public function viewData(){
       echo "<table class='table table-bordered table-hover table-sm'>";
       echo "<thead class='thead-dark' align='center'>";
       echo "<th>Id</th>";
+      echo "<th>DP</th>";
       echo "<th>Name</th>";
       echo "<th>College</th>";
       echo "<th>email</th>";
@@ -22,6 +23,7 @@ public function viewData(){
       foreach ($results as $result) {
         echo "<tr>";
         echo "<td>$result[id]</td>";
+        echo "<td><img class='rounded-circle profpic img-thumbnail ml-3' alt='100x100' style='' src='data:".$result['mm'].";base64,".base64_encode($result['dp'])."'/></td>";
         echo "<td>$result[name]</td>";
         echo "<td>$result[colleges]</td>";
         echo "<td>$result[email]</td>";
