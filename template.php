@@ -41,6 +41,7 @@ $viewtable = new viewtable();
              <a href="https://twitter.com/ceumalolos"><i class="fab fa-twitter ceucolor"></i></a>
         </nav>
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         <div class="container mt-4 puff-in-center">
           <?php $viewtable->viewApproveTable(); ?>
@@ -58,6 +59,63 @@ $viewtable = new viewtable();
             </div>
           </div>
 >>>>>>> Stashed changes
+=======
+        <div class="container-fluid mt-4 puff-in-center">
+          <div class="row">
+
+
+              <div class="col-md-5">
+
+                  <div class="profile-texter">
+                  <h3 class="ml-5 ceucolor2"> profile </h3>
+                  </div>
+
+                  <div class="col-md-4 mb-2">
+                  <?php profilePic(); ?>
+                  </div>
+
+                   <?php
+                      $user = new User();
+                      echo "<b class='ceucolor2'>Name: </b>"; echo $user->data()->name;
+                      echo "<br/>"
+                    ?>
+                    
+                    <?php
+                    $user = new User();
+                    echo "<b class='ceucolor2'>Date joined: </b>"; echo $user->data()->joined;
+                    echo "<br/>"
+                    ?>
+
+                    <?php
+                    $user = new User();
+                    echo "<b class='ceucolor2'>Email: </b>"; echo $user->data()->email;
+                    echo "<br/>"
+                    ?>
+
+                    <?php
+                    $user = new User();
+                    echo "<b class='ceucolor2'>Course: </b>"; echo $user->data()->colleges;
+                    echo "<br/>"
+                    ?>
+
+                    <a class="btn btn-info mt-3 profile-texter" href="updateprofile.php">Update Profile</a> </br>  
+                    <a class="btn btn-primary mt-3 profile-texter" href="updatepropic.php">Update Profile Picture</a> 
+                  </br>  
+                    <a class="btn btn-danger mt-3 profile-texter" href="logout.php">Log-out</a>
+
+              </div>
+
+
+
+            <div class="col-md-5">
+              profile
+            </div>
+
+            <div class="col-md-7">
+              list
+            </div>
+          </div>
+>>>>>>> origin/profileView
         </div>
 </body>
 
