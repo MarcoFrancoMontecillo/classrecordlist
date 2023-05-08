@@ -3,10 +3,13 @@ date_default_timezone_set('Asia/Manila');
 session_start();
 $GLOBALS['config'] = array(
     'mysql'=>array(
-        'host' => '127.0.0.1:3307',
-        'username' =>'root',
-        'password' =>'',
-        'db'=>'classrecordlist'
+        // 'host' => '127.0.0.1:3307',
+        // 'username' =>'root',
+        // 'password' =>'',
+        'host' => '109.106.254.158',
+        'username' =>'port7639_montecillomarco',
+        'password' =>'marco123',
+        'db'=>'port7639_classrecordlist'
     ),
     'remember'=>array(
         'cookie_name' => 'hash',
